@@ -1,0 +1,68 @@
+http://www.autotork.com.br/
+============================================================
+$$$$$$$$$$$$$$       PAGINA INICIAL           $$$$$$$$$$$$$$
+============================================================
+------------------------------------
+login
+------------------------------------
+LOGO  | SOBRE | SERVIÇOS | CONTATOS
+------------------------------------
+
+
+baner.jpg
+
+
+------------------------------------
+ESPECIALIZADA NO SEU CARRO!
+
+[img] AMORTECEDOR (CLICK E VAI PRO SERVIÇO]
+[img] CATALIZADOR (CLICK E VAI PRO SERVIÇO]
+[img] EMBREAGEM (CLICK E VAI PRO SERVIÇO]
+[img] ESCAPAMENTO (CLICK E VAI PRO SERVIÇO]
+[img] FREIOS (CLICK E VAI PRO SERVIÇO]
+[img] INJEÇÃO ELETRONICA (CLICK E VAI PRO SERVIÇO]
+[img] MANUTENÇÃO PREVENTIVA (CLICK E VAI PRO SERVIÇO]
+[img] SUSPENSÃO GERAL (CLICK E VAI PRO SERVIÇO]
+
+============================================================
+$$$$$$$$$$$$$$       SERVIÇOS                 $$$$$$$$$$$$$$
+============================================================
+ESPECIALIZADA NO SEU CARRO!
+
+[img] AMORTECEDOR (CLICK E VAI PRO SERVIÇO]
+[img] CATALIZADOR (CLICK E VAI PRO SERVIÇO]
+[img] EMBREAGEM (CLICK E VAI PRO SERVIÇO]
+[img] ESCAPAMENTO (CLICK E VAI PRO SERVIÇO]
+[img] FREIOS (CLICK E VAI PRO SERVIÇO]
+[img] INJEÇÃO ELETRONICA (CLICK E VAI PRO SERVIÇO]
+[img] MANUTENÇÃO PREVENTIVA (CLICK E VAI PRO SERVIÇO]
+[img] SUSPENSÃO GERAL (CLICK E VAI PRO SERVIÇO]
+
+git init
+git clone
+git add. 
+git commit - m "msg"
+git push
+git pull
+git merge - ira unir as ramificações ao repositorio master
+git status
+git log
+git branch - cria uma ramificação
+git checkout nome_da_Brach = muda para essa branche
+git branch -D nome_da_branche = deletar a branche
+git remote add origin "endeço do github" -
+git checkout -b nome_da_branche = cria uma nova branche e ja muda para qe as alteraçoes sejam rtealizadas nessa branche
+git remote rm origin - limpa o endereçamento
+
+git push -u  origin master
+
+
+HTML
+
+<body:
+<header>
+<nav> - onde fica o menu
+<section> - cria seções para a pagina
+<div> cria divisões
+
+<footer>

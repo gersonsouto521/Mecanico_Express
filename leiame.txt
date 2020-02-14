@@ -5,7 +5,7 @@ $$$$$$$$$$$$$$       PAGINA INICIAL           $$$$$$$$$$$$$$
 ------------------------------------
 login
 ------------------------------------
-LOGO  | SOBRE | SERVIÇOS | CONTATOS
+LOGO  | SOBRE | SERVIï¿½OS | CONTATOSs
 ------------------------------------
 
 
@@ -15,28 +15,28 @@ baner.jpg
 ------------------------------------
 ESPECIALIZADA NO SEU CARRO!
 
-[img] AMORTECEDOR (CLICK E VAI PRO SERVIÇO]
-[img] CATALIZADOR (CLICK E VAI PRO SERVIÇO]
-[img] EMBREAGEM (CLICK E VAI PRO SERVIÇO]
-[img] ESCAPAMENTO (CLICK E VAI PRO SERVIÇO]
-[img] FREIOS (CLICK E VAI PRO SERVIÇO]
-[img] INJEÇÃO ELETRONICA (CLICK E VAI PRO SERVIÇO]
-[img] MANUTENÇÃO PREVENTIVA (CLICK E VAI PRO SERVIÇO]
-[img] SUSPENSÃO GERAL (CLICK E VAI PRO SERVIÇO]
+[img] AMORTECEDOR (CLICK E VAI PRO SERVIï¿½O]
+[img] CATALIZADOR (CLICK E VAI PRO SERVIï¿½O]
+[img] EMBREAGEM (CLICK E VAI PRO SERVIï¿½O]
+[img] ESCAPAMENTO (CLICK E VAI PRO SERVIï¿½O]
+[img] FREIOS (CLICK E VAI PRO SERVIï¿½O]
+[img] INJEï¿½ï¿½O ELETRONICA (CLICK E VAI PRO SERVIï¿½O]
+[img] MANUTENï¿½ï¿½O PREVENTIVA (CLICK E VAI PRO SERVIï¿½O]
+[img] SUSPENSï¿½O GERAL (CLICK E VAI PRO SERVIï¿½O]
 
 ============================================================
-$$$$$$$$$$$$$$       SERVIÇOS                 $$$$$$$$$$$$$$
+$$$$$$$$$$$$$$       SERVIï¿½OS                 $$$$$$$$$$$$$$
 ============================================================
 ESPECIALIZADA NO SEU CARRO!
 
-[img] AMORTECEDOR (CLICK E VAI PRO SERVIÇO]
-[img] CATALIZADOR (CLICK E VAI PRO SERVIÇO]
-[img] EMBREAGEM (CLICK E VAI PRO SERVIÇO]
-[img] ESCAPAMENTO (CLICK E VAI PRO SERVIÇO]
-[img] FREIOS (CLICK E VAI PRO SERVIÇO]
-[img] INJEÇÃO ELETRONICA (CLICK E VAI PRO SERVIÇO]
-[img] MANUTENÇÃO PREVENTIVA (CLICK E VAI PRO SERVIÇO]
-[img] SUSPENSÃO GERAL (CLICK E VAI PRO SERVIÇO]
+[img] AMORTECEDOR (CLICK E VAI PRO SERVIï¿½O]
+[img] CATALIZADOR (CLICK E VAI PRO SERVIï¿½O]
+[img] EMBREAGEM (CLICK E VAI PRO SERVIï¿½O]
+[img] ESCAPAMENTO (CLICK E VAI PRO SERVIï¿½O]
+[img] FREIOS (CLICK E VAI PRO SERVIï¿½O]
+[img] INJEï¿½ï¿½O ELETRONICA (CLICK E VAI PRO SERVIï¿½O]
+[img] MANUTENï¿½ï¿½O PREVENTIVA (CLICK E VAI PRO SERVIï¿½O]
+[img] SUSPENSï¿½O GERAL (CLICK E VAI PRO SERVIï¿½O]
 
 git init
 git clone
@@ -44,15 +44,15 @@ git add.
 git commit - m "msg"
 git push
 git pull
-git merge - ira unir as ramificações ao repositorio master
+git merge - ira unir as ramificaï¿½ï¿½es ao repositorio master
 git status
 git log
-git branch - cria uma ramificação
+git branch - cria uma ramificaï¿½ï¿½o
 git checkout nome_da_Brach = muda para essa branche
 git branch -D nome_da_branche = deletar a branche
-git remote add origin "endeço do github" -
-git checkout -b nome_da_branche = cria uma nova branche e ja muda para qe as alteraçoes sejam rtealizadas nessa branche
-git remote rm origin - limpa o endereçamento
+git remote add origin "endeï¿½o do github" -
+git checkout -b nome_da_branche = cria uma nova branche e ja muda para qe as alteraï¿½oes sejam rtealizadas nessa branche
+git remote rm origin - limpa o endereï¿½amento
 
 git push -u  origin master
 
@@ -62,7 +62,7 @@ HTML
 <body:
 <header>
 <nav> - onde fica o menu
-<section> - cria seções para a pagina
-<div> cria divisões
+<section> - cria seï¿½ï¿½es para a pagina
+<div> cria divisï¿½es
 
 <footer>

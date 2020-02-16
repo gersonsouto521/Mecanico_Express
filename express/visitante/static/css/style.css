@@ -1,0 +1,36 @@
+/* Botão de Login */
+#botaologin{
+    padding-left: 85%;
+}
+
+li.nav-item{
+    font-size: 22px;
+    padding-left: 150% ;
+    
+}
+
+img.logo{
+    max-width:120px;
+    max-height:70px;
+    width: auto;
+    height: auto;
+}
+
+p.footer{
+    padding-left: 400px;
+    color: #fff;
+}
+
+
+
+p.footer span{
+    color:#22AA40;
+}
+
+p.textum{
+    text-align: justify;
+}
+
+a.text-muted span{
+    font-weight: bold;
+}

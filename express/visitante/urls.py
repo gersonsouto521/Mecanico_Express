@@ -19,5 +19,13 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
+    path('contato', views.contato),
     path('servicos/embreagem', views.embreagem),
+    path('servicos/suspensao', views.suspensao),
+    path('servicos/escapamento', views.escapamento),
+    path('servicos/injecao', views.injecao),
+    path('servicos/freios', views.freios),
+    path('servicos/manutencao_preventiva', views.manutencao_preventiva),
+    
+
 ]

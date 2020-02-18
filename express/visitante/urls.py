@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
+    path('servicos/embreagem', views.embreagem),
 ]

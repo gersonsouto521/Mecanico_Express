@@ -1,14 +1,5 @@
-/* Botão de Login */
-#botaologin{
-    padding-left: 85%;
-}
 
-li.nav-item{
-    font-size: 22px;
-    padding-left: 150% ;
-    
-}
-
+/*** ==== Header ==== ***/
 img.logo{
     max-width:120px;
     max-height:70px;
@@ -16,18 +7,33 @@ img.logo{
     height: auto;
 }
 
+/* Botão de Login */
+#botaologin{
+    padding-left: 85%;
+}
+
+/* NavBar */
+li.nav-item{
+    font-size: 22px;
+    padding-left: 150% ;    
+}
+
+/*** ==== Section ==== ***/
+
+
+
+/*** ==== Footer ==== ***/
+
 p.footer{
     padding-left: 400px;
     color: #fff;
 }
 
-
-
 p.footer span{
     color:#22AA40;
 }
 
-p.textum{
+p.text-muted{
     text-align: justify;
 }
 

@@ -40,3 +40,27 @@ p.text-muted{
 a.text-muted span{
     font-weight: bold;
 }
+
+/* sobre */
+.rounded-circle{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bd-placeholder-img{
+    background: url("../img/logo.png") no-repeat 0px 80px;
+}
+
+.col-lg-4 h2{
+    margin-left: 100px;
+    margin-bottom: 20px;    
+}
+
+.col-lg-4 p{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.container.marketing{
+    padding: 40px;
+}

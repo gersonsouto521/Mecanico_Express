@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Contato {% endblock %}
+
+{% block content %}
+<!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing bg-light ">
+
+    <!-- Three columns of text below the carousel -->
+
+
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{% static 'img/about/imagem1.png' %}" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2>Missão</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'img/about/imagem1.png' %}" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        
+        <h2>Visão</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'img/about/imagem1.png' %}" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <h2>Valores</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Conheça a nossa empresa <span class="text-muted">Mecânico Express.</span></h2>
+        <p class="text-muted">A Mecânico Express nasceu em 1995. Somos uma empresa que trabalha com oficina mecânica e mecatrônica de automóveis, criada para revisão, manutenção e reparo de carros nacionais e importados, com o objetivo de proporcionar satisfação ao cliente com preços competitivos.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'img/about/empresa.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+    </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Nosso Atendimento & <span class="text-muted">Nossa Oficina = 10/10.</span></h2>
+        <p class="text-muted">Conduzida por profissionais técnicos capacitados, preparados para cuidar da manutenção preventiva e corretiva do seu automóvel, oferecendo os melhores equipamento de teste no processo de diagnóstico. Promover serviços com mão de obra técnica profissional através de conhecimento sólido adquirido através de cursos técnicos, treinamentos e experiências na engenharia. Procuramos a excelência na prestação de serviços com peças e mão de obra de primeira linha.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'img/about/mecanicos.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+    
+      </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+{% endblock %}

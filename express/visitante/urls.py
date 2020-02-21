@@ -20,6 +20,8 @@ from . import views
 urlpatterns = [
     path('', views.home),
     path('contato', views.contato),
+    path('sobre', views.sobre),
+    path('servicos', views.servicos),
     path('servicos/embreagem', views.embreagem),
     path('servicos/suspensao', views.suspensao),
     path('servicos/escapamento', views.escapamento),

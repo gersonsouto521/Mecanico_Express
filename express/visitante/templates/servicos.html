@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
-{% block title %} Contato {% endblock %}
+{% load static %}
+{% block title %} Serviços da Empresa {% endblock %}
 
 {% block content %}
 <!-- Inferior Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -23,7 +24,110 @@
   
     </div>
   </nav>
-<div class="offset-1 col-10 list-div">
-    <h1>Adicione a sua nova tarefa:</h1>
-</div>
+<body>
+  <!-- Primeira Seção -->
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- Embreagem -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/service/embreagem.jpg' %}" class="d-block w-100" alt="..." >
+            <div class="card-body">
+              <p class="card-text">A embreagem é responsável por transmitir a força produzida pelo motor para a caixa de cambio.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/servicos/embreagem" class="btn btn-sm btn-outline-secondary">Embreagem</a>
+                  <a href="contato" class="btn btn-sm btn-outline-secondary">Agendar</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Suspencao -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/service/suspensao.jpg' %}" class="d-block w-100" alt="..." >
+            <div class="card-body">
+              <p class="card-text">A suspensão é o sistema que reduz o impacto das irregularidades da pista aos ocupantes do veículo.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/servicos/suspensao" class="btn btn-sm btn-outline-secondary">Suspensão</a>
+                  <a href="contato" class="btn btn-sm btn-outline-secondary">Agendar</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Escapamento -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/service/escapamento.jpg' %}" class="d-block w-100" alt="..." >
+            <div class="card-body">
+              <p class="card-text">O escapamento tem como função principal à eliminação dos gases gerados após a queima dos cilindros.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/servicos/escapamento" class="btn btn-sm btn-outline-secondary">Escapamento</a>
+                  <a href="contato" class="btn btn-sm btn-outline-secondary">Agendar</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inejecao -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/service/injecao.jpg' %}" class="d-block w-100" alt="..." >
+            <div class="card-body">
+              <p class="card-text">A injeção eletrônica é um sistema que tem como função alimentar e gerenciar eletronicamente um motor a combustão.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/servicos/injecao" class="btn btn-sm btn-outline-secondary">Injeção Eletrônica</a>
+                  <a href="contato" class="btn btn-sm btn-outline-secondary">Agendar</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Freios -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/service/freios.jpg' %}" class="d-block w-100" alt="..." >
+            <div class="card-body">
+              <p class="card-text">O freio é parte essencial em qualquer veículo, por isso merecem sua devida atenção.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/servicos/freios" class="btn btn-sm btn-outline-secondary">Freios</a>
+                  <a href="contato" class="btn btn-sm btn-outline-secondary">Agendar</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Manutenção Preventiva -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/service/manutencao_preventiva.jpg' %}" class="d-block w-100" alt="..." >
+            <div class="card-body">
+              <p class="card-text">O objetivo da manutenção preventiva é antecipar possíveis ocorrências para evitar falhas ou quebra do equipamento.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/servicos/manutencao_preventiva" class="btn btn-sm btn-outline-secondary">Manutenção Preventiva</a>
+                  <a href="contato" class="btn btn-sm btn-outline-secondary">Agendar</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
 {% endblock %}

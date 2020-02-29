@@ -1,11 +1,27 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .forms import ContactForm
+
 def home(request):
     return render(request,'index.html')
 
+def contato_teste(request):
+    return render(request,'contato2.html')
+
 def contato(request):
-    return render(request,'contato.html')
+    contact_form = ContactForm(request.POST or None)
+    context = {
+        "title": "Formulário de Contatos",
+        "content": "Bem-vindo a pagina de contato",
+        "form": contact_form,
+    }
+    if request.method == "POST":
+        print(request.POST)
+    return render(request,'contato.html',context)
+
+
+
 
 def sobre(request):
     return render(request,'sobre.html')

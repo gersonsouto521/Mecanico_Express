@@ -2,150 +2,109 @@
 {% block title %} Contato {% endblock %}
 
 {% block content %}
-<!-- Inferior Navbar -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+    <body>
+      <!-- Inferior Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sobre">Sobre</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="servicos">Serviços</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="contato">Contatos<span class="sr-only">(current)</span></a>
-        </li>   
-            
-      </ul>
-  
-    </div>
-  </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobre">Sobre</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="servicos">Serviços</a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" href="contato">Contatos<span class="sr-only">(current)</span></a>
+      </li>             
+    </ul>
+  </div>
+</nav>
+
+
 <div class="offset-1 col-10 list-div bg-light" id="contato">
   <div class="card">
   <div class="card-body">
-    <!--Formulario de Contato-->
+
+<!--inicio DJANGO-->
     <div class="order-md-1">
-      <h4 class="mb-3">Formulário de Contatos</h4>
-      <form class="needs-validation" novalidate>
+      <h4 class="mb-3">{{ title }}</h4>
+      <form method='POST' class="needs-validation" novalidate>{% csrf_token %}
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">Primeiro Nome</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid first name is required.
-            </div>
+          <div class="col-md-8">
+            <label for="firstName">Infome o seu Nome: </label>
+            {{ form.nome }}
           </div>
           <div class="col-md-6 mb-3">
-            <label for="lastName">Sobre Nome</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
-          </div>
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            {{ form.email }}
+            <label for="phone">Telefone</label>
+            {{ form.telefone }}
+          </div>         
         </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label for="phone">Telefone</label>
-          <input type="tel" class="form-control" id="phone" placeholder="(00) 9xxxx-xxxx">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-      </div>
 
-<!--Dados do Veiculo-->
-      <hr class="mb-4">   
-      <h4 class="mb-3">Dados do Veiculo</h4>
-      <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="placa">Placa do Veículo</label>
-        <input type="text" class="form-control" id="placa" placeholder="XXX-0000" required>
-        <div class="invalid-feedback">
-          Security code required
-        </div>
-      </div>
-      <div class="col-md-5 mb-3">
-        <label for="country">Marca do Veículo</label>
-        <select class="custom-select d-block w-100" id="country" required>
-          <option value="">Choose...</option>
-          <option>Fiat</option>
-          <option>Ford</option>
-          <option>Chevrolet</option>
-          <option>Wolksvagem</option>
-          <option>Hyundai</option>
-          <option>Outras</option>
-        </select>
-        <div class="invalid-feedback">
-          Please select a valid country.
-        </div>
-      </div>
-    </div>
-
-<!--Serviços-->
-      <hr class="mb-4">
-      <h4 class="mb-3">Serviços</h4>
+        <hr class="mb-4"> 
+        <h4 class="mb-3">Dados do Veiculo</h4>  
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="lavagem-veicular">
-              <label class="custom-control-label" for="lavagem-veicular">Lavagem Veicular </label>
-            </div>
+          <div class="col-md-3 mb-3">
+            <label for="placa">Placa do Veículo</label>
+            {{ form.placa }}
           </div>
-          <div class="col-md-6 mb-3">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="lavagem-motor">
-              <label class="custom-control-label" for="lavagem-motor">Lavagem de Motor </label>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="manutencao-preventiva">
-              <label class="custom-control-label" for="manutencao-preventiva">Manutenção Preventiva </label>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="reparo-gerais">
-              <label class="custom-control-label" for="reparo-gerais">Reparo Gerais </label>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="revisão-leve">
-              <label class="custom-control-label" for="revisão-leve">Revisão Leve </label>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="revisão-pesada">
-              <label class="custom-control-label" for="revisão-pesada">Revisão Pesada </label>
-            </div>
-          </div>
-        </div>
-<!--Observações Gerais-->
-      <hr class="mb-4">
-      <h4 class="mb-3">Observações Gerais</h4>
-        <div class="form-group">
-          <textarea class="form-control" rows="5" cols="80" maxlength="500"></textarea>
+          <div class="col-md-5 mb-3">
+            <label for="country">Marca do Veículo</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>Fiat</option>
+              <option>Ford</option>
+              <option>Chevrolet</option>
+              <option>Wolksvagem</option>
+              <option>Hyundai</option>
+              <option>Outras</option>
+            </select>
+          </div>            
         </div>
 
-        <button class="btn btn-success btn-lg btn-block" type="submit">Continue to checkout</button>
+        <hr class="mb-4">
+        <h4 class="mb-3">Serviços</h4>
+        <div class="row ">
+          <ul class="list-unstyled">
+            <li>{{ form.servico}}</li>
+              
+          </ul>
+          </div>
+
+        <hr class="mb-4">
+        <h4 class="mb-3">Observações Gerais</h4>
+        <div class="col-md-12">
+          {{ form.observacoes }}
+        </div>
+        <br>
+          
+        <button class="btn btn-success btn-lg btn-block" type="submit">Enviar</button>
       </form>
     </div>
-  </div>
-  </div>
+    </div>
   </div>
 </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
 {% endblock %}

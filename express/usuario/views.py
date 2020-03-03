@@ -2,12 +2,13 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from django.contrib import messages
 from django.core.paginator import Paginator
+from django.contrib.auth.decorators import login_required
 
 
 from .models import Task
 from .forms import TaskForm
 
- 
+@login_required
 def taskList (request):
     search = request.GET.get('search')
     if search:
@@ -19,10 +20,12 @@ def taskList (request):
         tasks = paginator.get_page(page)
     return render(request, 'task/list.html', {'tasks': tasks})
 
+@login_required
 def taskView(request, id):  
     task = get_object_or_404(Task, pk=id)
     return render(request, 'task/task.html', {'task':task})
 
+@login_required
 def newTask(request):
     if request.method == 'POST':
         form = TaskForm(request.POST)        
@@ -30,11 +33,12 @@ def newTask(request):
                 task = form.save(commit=False)
                 task.done = 'doing'
                 task.save()
-                return redirect('/usuario')
+                return redirect('/logged/task')
     else:
         form = TaskForm()
         return render(request, 'task/addtask.html', {'form': form})
-    
+
+@login_required
 def editTask(request, id):
     task = get_object_or_404(Task, pk =id)
     form = TaskForm(instance=task)
@@ -44,16 +48,17 @@ def editTask(request, id):
  
         if(form.is_valid()):
             task.save()
-            return redirect('/usuario')
+            return redirect('/logged/task')
         else:
             return render(request, 'task/edittask.html', {'form':form, 'task':task})
     else:
         return render(request, 'task/edittask.html', {'form':form, 'task':task})
 
+@login_required
 def deleteTask(request, id):
     task = get_object_or_404(Task, pk=id)
     task.delete()
 
     messages.info(request, 'Tarefa deletada com sucesso!')
 
-    return redirect('/usuario')
+    return redirect('/logged/task')

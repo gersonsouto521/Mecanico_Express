@@ -2,38 +2,6 @@
     padding: 0;
 }
  
-/* Navbar */
- 
-.navbar {
-    border-bottom: 1px solid #333;
-    margin-bottom: 20px;
-}
- 
-.navbar-nav{
-    margin: auto;
-}
- 
-.navbar-brand{
-    font-weight: bold;
-}
- 
-.navbar-ligh .navbar-nav a.nav-link{
-    color: #333;
-    letter-spacing: 1px;
-}
-/* Rodapé */
-footer{
-    background-color: #333;
-    height: 300px;
-    border-top: 2px solid #202020;
-}
- 
-footer p{
-    color: #f5f5f5;
-    position: relative;
-    top: 50%;
-    text-align: center;
-}
 
 /* Lista de Tarefas */
 .list-div{
@@ -124,3 +92,41 @@ ul.messages li{
     margin-right: 5px;
 }
 
+/*NOVO BASE_USER*/
+
+/*** ==== Header ==== ***/
+img.logo{
+    max-width:120px;
+    max-height:70px;
+    width: auto;
+    height: auto;
+}
+
+/* Botão de Login */
+#botaologin{
+    padding-left: 85%;
+}
+/* NavBar */
+li.nav-item{
+    font-size: 22px;
+    padding-left: 150% ;    
+}
+
+/*** ==== Footer ==== ***/
+
+p.footer{
+    padding-left: 400px;
+    color: #fff;
+}
+
+p.footer span{
+    color:#22AA40;
+}
+
+p.text-muted{
+    text-align: justify;
+}
+
+a.text-muted span{
+    font-weight: bold;
+}

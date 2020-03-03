@@ -11,33 +11,64 @@
     <link rel="stylesheet" href="{% static 'css/style_user.css' %}">
 </head>
 <body>
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/">To Do</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header>
+            <!-- Superior Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/"><img src="{% static 'img/logo.png' %}" class="logo" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            {% if user.is_authenticated %}
+                <div class="collapse navbar-collapse" id="botaologin">
+                    <a href="/accounts/logout"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sair</button></a>
+                </div>
+            {% else %}
+                <div class="collapse navbar-collapse" id="botaologin">
+                    <a href="accounts/login"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Entrar</button></a>
+                </div>
+            {% endif %}
+        </nav>
+        <!-- Slides -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'img/slides/slide_01.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="{% static 'img/slides/slide_02.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        </div>
+    </header>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tarefas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sobre-Nos</a>
-            </li>
-        </ul>
-      </div>
+    {% block content %}
+    
+    {% endblock %}
+    
+<!--Footer-->
+    
+    <div class="container">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-6 col-md" id="primeira-coluna">
+                <h5>A Empresa</h5>
+                <p class="text-muted">A Mecanico Express nasceu em 1995. Somos uma empresa que trabalha com revisão, manutenção e reparo de carros, com o objetivo de proporcionar satisfação ao cliente com preços competitivos.</p>
+                </div>
+                <div class="col-6 col-md">
+                <h5>Contato</h5>
+                <ul class="list-unstyled text-small" id="segunda-coluna">
+                    <li><a class="text-muted"><span>Telefone:</span> (71) 99274-7509 / (71) 3396-3629</a></li>
+                    <li><a class="text-muted"><span>Email:</span> contato@mecanicoexpress.com.br</a></li>
+                    <li><a class="text-muted"><span>Endereço:</span> Conj. Vida Nova, Caminho 04/ CIA II / Simões Filho-BA</a></li>
+                </ul>
+                </div>
+            </div>
+        </footer> 
+    </div>
+  <!-- Superior Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <p class="footer">Copyright © 2020 <span>Mecânico Express</span>. Todos os direitos reservados.</p>
     </nav>
-    
-    {% block content %} {% endblock %}
-    
-        <footer>
-            <p>horaDeCodar ToDo</p>
-        </footer>
     </div>
  
     

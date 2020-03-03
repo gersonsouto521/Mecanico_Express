@@ -8,7 +8,7 @@ class Task(models.Model):
  
     title = models.CharField(max_length=255)
     servico = models.CharField(max_length=20)
-    placa = models.CharField(max_length=8)
+    placa = models.CharField(max_length=7)
     description = models.TextField()
     done = models.CharField(
         max_length=5,

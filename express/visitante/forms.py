@@ -1,7 +1,7 @@
 from django import forms
 
 class ContactForm(forms.Form):
-    nome = forms.CharField(
+    nome = forms.CharField(max_length=50,
         widget=forms.TextInput(
             attrs={
                     "class": "form-control", 
@@ -18,16 +18,17 @@ class ContactForm(forms.Form):
             )
         )
 
-    telefone     = forms.CharField(
+    telefone     = forms.CharField(max_length=11,
         widget=forms.TextInput(
+            
             attrs={
                     "class": "form-control", 
-                    "placeholder": "71 9xxxx-xxxx"
+                    "placeholder": "71 9xxxx-xxxx",
                 }
             )
         )
 
-    placa     = forms.CharField(
+    placa     = forms.CharField(max_length=7,
         widget=forms.TextInput(
             attrs={
                     "class": "form-control", 

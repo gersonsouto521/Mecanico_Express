@@ -1,12 +1,12 @@
 {% extends 'base_user.html' %}
 {% load crispy_forms_tags %}
-{% block title %} Registrar no ToDo List {% endblock %}
+{% block title %} Registro de Funcionários {% endblock %}
 {% block content %}
 <div class="ros">
     <div class="col-md-4 offset-md-4">
-        <div class="card auth-card">
+        <div class="card auth-card" id="card_login">
             <div class ="card-body">
-                <h4 class="card-title text-center">Registrar no ToDo List</h4>
+                <h4 class="card-title text-center">Registro de Funcionários</h4>
                 <form method="post">
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ next }}">
